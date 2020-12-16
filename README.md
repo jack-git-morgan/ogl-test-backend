@@ -57,35 +57,31 @@ to run your frontend.
 ### Part 1. Get the services running 
 Using the instructions above, confirm the services are running and are reachable.
 
-There is an intentional data issue that you will need to debug before the services will start.
-
-The standard console output should provide details on the error. 
-
 When you believe the services are running, you can confirm this by navigating to the following example URL in a browser:
 
 http://localhost:8080/product
 
-Where you should be presented with a JSON object of product data 
+You should be presented with a JSON object of product data.
 
 ### Part 2. Products
 These tasks involve consuming the pre-provided implementation of products in the API, hooking into a user interface and making minor changes to the data structure. 
 ##### Task 2.1 - Product List User Interface
 
-User Story - *As a user, I want to see a listing of my products in the system* 
+User Story - *As a user, I want to see a listing of my products in the system.* 
 
-Details - Using a frontend web framework (e.g. React/VueJS/Angular) of your choice create a simple user interface that allows the existing <b>Product</b> data (id, sku and price) from the above URL to be displayed in a list
+Details - Using a frontend web framework (e.g. React/VueJS/Angular) of your choice create a simple user interface that allows the existing <b>Product</b> data (id, sku and price) from the above URL to be displayed in a list.
 
 ##### Task 2.2 - Changing the data schema
 
-User Story - *As a user, I want to see descriptions against my products*
+User Story - *As a user, I want to see descriptions against my products.*
 
-Details - Review the files in the resources folder.
+Details - Review the SQL files in the resources directory.
 
 Based on the existing code, add a new "description" column to the Product table.
 
 The new column should be a text field, max size 255 chars and not nullable.
 
-Review the class com.ogl.devtest.product.Product  
+Review the class `com.ogl.devtest.product.Product`.
 
 Based on the existing code, add code to support the new "description" field.
 
@@ -93,7 +89,7 @@ Update your UI to consume and display the new field.
 
 ##### Task 2.3 - Creating Products
 
-User Story - *As a user, I want the ability to add products to my inventory*
+User Story - *As a user, I want the ability to add products to my inventory.*
 
 Details - Provide functionality in your UI that allows the user to capture the following information to be saved as a new Product record:
         
@@ -101,40 +97,40 @@ Details - Provide functionality in your UI that allows the user to capture the f
 - A description
 - A price
 
-The http://localhost:8080/product endpoint will allow product data to be saved by making a <b>POST</b> request.
+The `/product` endpoint will allow product data to be saved by making a <b>POST</b> request.
 
 The endpoint accepts a JSON object representing a product with the same fields as the Product class (id, sku, description and price).
 
 Hint: leave id null to have the database auto-assign its value.
 
-##### Task 2.4 Updating Products
+##### Task 2.4 - Updating Products
 
-User Story - *As a user, I want the ability to update product details in my inventory*
+User Story - *As a user, I want the ability to update product details in my inventory.*
 
 Details - Provide functionality in your UI that allows the user to select an existing Product record, update any of the sku, description and price fields and save those changes back.
 
 Hint: Using the same endpoint as above with the <b>id</b> field set will overwrite any product data matching that id.  
 
 ### Part 3. Customers
-These tasks involve extending the services to implement endpoints for serving customer data, and implementing some more complex data structures
+These tasks involve extending the services to implement endpoints for serving customer data, and implementing some more complex data structures.
 ##### Task 3.1 Customer Endpoints
 User Story - *As a user I want to view, create and edit a list of all my customers.*
 
-Detail - Using the existing code as a guide, add the ability for the services to expose the customer data to the same capabilities of the product classes
+Detail - Using the existing code as a guide, add the ability for the services to expose the customer data to the same capabilities of the product classes.
 
 Hint: you will need a controller and repository class.
 
-Update your User Interface with an option to list, create and update customers as per the Product tasks above  
+Update your User Interface with an option to list, create and update customers as per the Product tasks above.
 
 ##### Task 3.2 Add Extra Fields to Customer
 *As a user I would like to see my customer's addresses.*
 
 An address should include a street, city, county and postcode.
 
-Please provide any validation as you would consider appropriate 
+Please provide any validation as you would consider appropriate.
 
 ### Part 4. Advanced
-These tasks involve implementing some more advanced features 
+These tasks involve implementing some more advanced features.
 ##### 4.1 Plot Customers on a Map
 User Story - *As a user I would like to see a map with markers for all my customers based on their postcode.*
 
