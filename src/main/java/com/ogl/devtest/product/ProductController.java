@@ -36,7 +36,7 @@ public class ProductController {
   }
 
   @PostMapping(value = "", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-  public ResponseEntity<Product> save(Product product) {
+  public ResponseEntity<Product> save(@RequestBody Product product) {
     return ResponseEntity.ok(productRepository.save(product));
   }
 }
