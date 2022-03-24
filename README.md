@@ -39,14 +39,15 @@ If in doubt, refer to the terminal commands below.
 
 ### Via Terminal
 Compile
-```shell script
+```
 ./mvnw clean package
 ```
 
 Run
-```shell script
+```
 ./mvnw spring-boot:run
 ```
+
 The backend will now be available to consume from http://localhost:8080.
 
 ## Submission
