@@ -5,7 +5,7 @@ The code base contains a consumable product inventory system, alongside partial 
 
 Your tasks will involve:
  
-- consuming the existing services using a frontend web framework (e.g. React/VueJS/Angular) of your choice.
+- Developing a User Interface using the React framework that will consume the services via the API provided.
 
 - extending the functionality of the backend services
 
@@ -69,7 +69,7 @@ These tasks involve consuming the pre-provided implementation of products in the
 
 User Story - *As a user, I want to see a listing of my products in the system.* 
 
-Details - Using a frontend web framework (e.g. React/VueJS/Angular) of your choice create a simple user interface that allows the existing <b>Product</b> data (id, sku and price) from the above URL to be displayed in a list.
+Details - Using the React framework, create a simple user interface that allows the existing <b>Product</b> data (id, sku and price) from the above URL to be displayed in a list.
 
 ##### Task 2.2 - Changing the data schema
 
