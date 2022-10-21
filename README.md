@@ -51,8 +51,9 @@ Run
 The backend will now be available to consume from http://localhost:8080.
 
 ## Submission
-Package all your sources into a zip or tarball with instructions on how
-to run your frontend.
+Fork the repository with your git hosting tool of choice, alternatively package all your sources into a zip or tarball.  
+
+Please include instructions on how to run your frontend.
 
 ## Tasks
 ### Part 1. Get the services running 
@@ -141,3 +142,10 @@ Use a third party API mapping tool.
 User Story - *As a user I would like to filter the customers plotted on the map by their postcode.*
 
 Provide a facility to limit the plots on the map based on an inputted postcode.
+
+#### 4.3 Group Customers by City
+User Story - *As a user I would like to see how many customers I have in each city*
+
+Provide an API endpoint which outputs a count of customers in each city.  
+
+Update your user interface to display this information in a tabulated fashion.
