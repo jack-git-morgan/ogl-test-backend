@@ -148,4 +148,4 @@ User Story - *As a user I would like to see how many customers I have in each ci
 
 Provide an API endpoint which outputs a count of customers in each city.  
 
-Update your user interface to display this information in a tabulated fashion.
+Update your user interface to display this information in a tabulated form.
