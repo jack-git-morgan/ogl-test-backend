@@ -143,7 +143,7 @@ User Story - *As a user I would like to filter the customers plotted on the map 
 
 Provide a facility to limit the plots on the map based on an inputted postcode.
 
-#### 4.3 Group Customers by City
+##### 4.3 Group Customers by City
 User Story - *As a user I would like to see how many customers I have in each city*
 
 Provide an API endpoint which outputs a count of customers in each city.  
